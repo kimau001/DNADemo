@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior"
+    tools:context=".activities.SettingActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_login_1"
+        android:tint="@color/colorBlue4"
+        android:tintMode="multiply" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="60dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/buttonBack"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/baseline_arrow_back_white_48" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/kanit"
+                android:text="@string/text_setting"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/text_size_5xl" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_tr_login"
+            android:orientation="vertical"
+            android:padding="36dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/kanit"
+                    android:text="@string/text_language"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/text_size_xl" />
+
+                <TextView
+                    android:id="@+id/textLang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/kanit"
+                    android:paddingVertical="16dp"
+                    android:paddingStart="16dp"
+                    android:text="@string/text_english"
+                    android:textColor="@color/colorGray"
+                    android:textSize="@dimen/text_size_xl" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/colorBlack" />
+
+            <TextView
+                android:id="@+id/textSignOut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/kanit"
+                android:layout_marginTop="24dp"
+                android:text="@string/text_sign_out"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_size_xl" />
+
+            <TextView
+                android:id="@+id/textVersion"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/kanit"
+                android:layout_marginTop="24dp"
+                android:text="version"
+                android:gravity="bottom"
+                android:layout_gravity="end"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_size_xl" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

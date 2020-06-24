@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textEnglish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/kanit"
+        android:text="@string/text_english"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/text_size_xl" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorBlack" />
+
+    <TextView
+        android:id="@+id/textThai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/kanit"
+        android:text="@string/text_thai"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/text_size_xl" />
+
+</LinearLayout>
